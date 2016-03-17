@@ -3,9 +3,9 @@
  `HTTP`是`Hyper Text Transfer Protocol`（超文本传输协议）的缩写。`HTTP`是客户端浏览器或其他程序与Web服务器之间的应用层通信协议。在Internet上的Web服务器上存放的都是超文本信息，客户机需要通过`HTTP`协议传输所要访问的超文本信息。`HTTP`包含命令和传输信息，不仅可用于Web访问，也可以用于其他因特网/内联网应用系统之间的通信，从而实现各类应用资源超媒体访问的集成。
 
 
-**OSI七层模型**
+##**OSI七层模型**
 
-|**OSI中的层**|**功能**|**TCP/IP协议族**|
+|**OSI中的层**|**功能**|**协议族**|
 | :----: | :----: | :----: |
 |应用层|文件传输、电子邮件、文件服务、虚拟终端|--|
 |表示层|数据格式化、代码转换、数据加密|--|
@@ -15,12 +15,13 @@
 |数据链路层|传输有地址的帧以及错误检测功能|SLIP、CSLIP、PPP、ARP、RARP、MTU|
 
 
-**HTTP请求响应模型**
+##**HTTP请求响应模型**
+
 HTTP协议永远都是客户端发起请求，然后服务器送回相应。
 
 ![HTTP请求模型](./img/http-res-req.jpg)
 
-**过程**
+##**过程**
 
 	客户端 ----- 通过socket建立连接 ----- 服务器
     客户端 -----  请求 -----> 服务器
@@ -28,7 +29,7 @@ HTTP协议永远都是客户端发起请求，然后服务器送回相应。
     客户端 -----  断开 ------ 服务器
     下一次连接.......
 
-**TCP/IP 握手**
+##**TCP/IP 握手**
 
 `TCP(Transmission Control Protocol)`　传输控制协议，`HTTP`是建立在TCP/IP协议基础之上，为了能够进行有效的稳定的传输，TCP会进行三次握手，三次握手成功之后进行数据传输。
 ![TCP 三次握手](./img/tcp-ip-3-hand-shake.jpg)
@@ -82,7 +83,62 @@ HTTP协议永远都是客户端发起请求，然后服务器送回相应。
 		SYN      _ _ _ _  _ _ 0 _
 		FIN      _ _ _ _  _ _ _ 0
 
-**HTTP 状态码**
+##**HTTP报文**
+HTTP 是一种请求/响应式的协议，即一个客户端与服务器建立连接后，向服务器发送一个请求;服务器接到请求后，给予相应的响应信息。
+
+**报文组成**
+一个完整的报文由三个部分组成：`起始行(start line)`、`首部(header)`、`主体(body)`。
+
+**请求报文**
+*结构组成*
+
+	<method> <request-URL> <version> 
+	<headers>
+	<body>
+
+*示例*
+
+	GET cn.toursforfun.com HTTP/1.1    //GET 方法  请求地址  HTTP版本
+
+	Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+	Accept-Encoding:gzip, deflate, sdch
+	Accept-Language:zh-CN,zh;q=0.8,zh-TW;q=0.6
+	User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36
+
+	Welcome come to Tours for Fun!
+
+
+**响应报文**
+
+*结构组成*	
+
+	<version> <status> <reason-phrase>
+	<headers>
+	<entity-body>
+
+*示例*
+	
+	HTTP/1.1 200 OK        //HTTP版本 1.1    状态码200 原因短语OK
+	
+	Cache-Control:no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+	Connection:keep-alive
+	Content-Length:291529
+	Content-Type:text/html
+	Date:Thu, 17 Mar 2016 12:29:58 GMT
+	Expires:Thu, 19 Nov 1981 08:52:00 GMT
+	
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <title>Tours for Fun</title>
+	</head>
+	<body>
+	    <h1>Welcome come to Tours for Fun!</h1>
+	</body>
+	</html>
+
+##**HTTP 状态码**
 
 |code|desc|
 |:----:|:----:|
@@ -127,9 +183,7 @@ HTTP协议永远都是客户端发起请求，然后服务器送回相应。
 |504| 网关超时|
 |505| HTTP版本未被支持|    
 
-
-
-**session、cookie**
+##**session、cookie**
 
 `HTTP`协议，是一种无状态协议，就是说客户端发送一次请求，服务器端接收请求，经过处理返回给客户端信息，然后客户端和服务器端的链接就断开了，为了维护他们之间的链接，让服务器知道这是前一个用户发送的请求，必须在一个地方保存客户端的信息，有2中解决方案，一是在客户端保存，二是在服务器端保存。
 

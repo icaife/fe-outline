@@ -94,12 +94,8 @@
 按照下列图片，用语义化标签写出HTML结构，不用写CSS，可以使用HTML5的标签：
 ![](./img/html-homework.jpg)
 
-- 结构组成
-- 常见标签，标签之间的区别
-- 常见属性，作用
-- 规范、语义化
-- 练习实践，如何写出一个符合规范的html文档
 ##参考资料
+
 - [Mozilla Developer Network](Mozilla Developer Network "https://developer.mozilla.org/zh-CN/docs/Web/Tutorials")
 - [Basic Structure of a Web Page](http://www.sitepoint.com/web-foundations/basic-structure-of-a-web-page/)
 - [如何规范大型网站的HTML代码](http://www.mahaixiang.cn/html/648.html)

@@ -16,35 +16,46 @@
 **常见标签**
 
 - 文档标签(10 个)：
+
 		<html>、<head>、<body>、<title>、<meta>、<base>、<style>、<link>、<script>、<noscript> 
 
 - 框架标签(4个)：
+- 
 		<frame>、<frameset>、<iframe>、<noframes> 
 
 - 3、布局标签(1个)：
+
 		<div> 
 - 4、表格标签(10 个)：
+
 		<table>、<thead>、<tbody>、<tfoot>、<tr>、<td>、<th>、<col>、<colgroup>、<caption> 
 
 - 表单标签(10 个)：
+
 		<from>、<input>、<textarea>、<button>、<select>、<optgroup>、<option>、<label>、<fieldset>、<legend> 
 
 - 列表标签(6个)：
+
 		<ul>、<ol>、<li>、<dl>、<dt>、<dd> 
 
 - 链接标签(1个)：
+
 		<a> 
 
 - 多媒体标签(5个)：
+
 		<img>、<map>、<area>、<object>、<param> 
 
 - 文章标签：
+
 		<h1> - <h6> 、<p>、<br>、<span>、<bdo>、<pre>、<acronym>、<abbr>、<blockquote>、<q>、<ins>、<del>、<address> 
 
 - 字体样式标签：
+
 		<tt>、<i>、<b>、<big>、<small>、<em>、<strong>、<dfn>、<code>、<samp>、<kbd>、<var>、<cite>、<sup>、<sub> 
 
 - 特殊标签(3个)：
+
 		<!DOCTYPE>、<!-- -->、<hr>
 
 **元素之间的区别**

@@ -100,3 +100,4 @@
 - [Basic Structure of a Web Page](http://www.sitepoint.com/web-foundations/basic-structure-of-a-web-page/)
 - [如何规范大型网站的HTML代码](http://www.mahaixiang.cn/html/648.html)
 - [HTML+CSS基础课程](http://www.imooc.com/learn/9)
+- [Baidu FE Task](http://ife.baidu.com/task/all)

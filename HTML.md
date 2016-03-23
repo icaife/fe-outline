@@ -12,43 +12,55 @@
 ![](./img/html.jpg)
 
 ##常见标签 & 标签之间的区别
+
 **常见标签**
 
 - 文档标签(10 个)：
 		<html>、<head>、<body>、<title>、<meta>、<base>、<style>、<link>、<script>、<noscript> 
+
 - 框架标签(4个)：
 		<frame>、<frameset>、<iframe>、<noframes> 
+
 - 3、布局标签(1个)：
 		<div> 
 - 4、表格标签(10 个)：
 		<table>、<thead>、<tbody>、<tfoot>、<tr>、<td>、<th>、<col>、<colgroup>、<caption> 
+
 - 表单标签(10 个)：
 		<from>、<input>、<textarea>、<button>、<select>、<optgroup>、<option>、<label>、<fieldset>、<legend> 
+
 - 列表标签(6个)：
 		<ul>、<ol>、<li>、<dl>、<dt>、<dd> 
+
 - 链接标签(1个)：
 		<a> 
+
 - 多媒体标签(5个)：
 		<img>、<map>、<area>、<object>、<param> 
+
 - 文章标签：
 		<h1> - <h6> 、<p>、<br>、<span>、<bdo>、<pre>、<acronym>、<abbr>、<blockquote>、<q>、<ins>、<del>、<address> 
+
 - 字体样式标签：
 		<tt>、<i>、<b>、<big>、<small>、<em>、<strong>、<dfn>、<code>、<samp>、<kbd>、<var>、<cite>、<sup>、<sub> 
+
 - 特殊标签(3个)：
 		<!DOCTYPE>、<!-- -->、<hr>
 
 **元素之间的区别**
+
 按照布局的特性可以分为块级元素、内联元素和内联块级元素：
 - 块级元素：block，总是在新的行开始，每一元素独站一行，宽度默认是父级元素的100%，比如：`div`、`h1`等。
 - 内联元素：inline，和其他元素在同一行上，宽和高不可以设定，比如：`span`,`strong`，`a`等。
 - 内联块级元素：inline-block，元素呈现是内联元素，保持在同一行，和inline的区别是可以设置宽高，比如：`img`、`button`、`input`、`select`。
 
 ##规范&语义化
+
 **规范**：写Web页面就像我们建设房子一样，地基牢固，房子才不会倒。同样的，我们制作Web页面也是一样的，一个良好的HTML结构是制作一个网站的开始，良好的CSS只存在同样良好的HTML中。
 
 - **DOCTYPE的声明：**统一使用严格型的`<!DOCTYPE html>`。
 - **正确的代码缩进：**在平时的代码编辑中，应该使用缩进，提高代码的可读性。
-- **正确的标签嵌套：**层级嵌套是有一定规范的，这个自己记住几点就行了：`td`应该放在`tr`当中，`dt`应该放在`dl`当中，`p`里面不能放`div`，内联元素里面不能放块级元素，
+- **正确的标签嵌套：**层级嵌套是有一定规范的，这个自己记住几点就行了：`td`应该放在`tr`当中，`dt`应该放在`dl`当中，`p`里面不能放`div`，内联元素里面不能放块级元素。
 - **删除不必要的标签：**：比如下面一段代码：
 		
 		<div>
@@ -65,6 +77,7 @@
 在写代码中，尽量使用合适的语义化标签，比如`h1`、`dl`、`nav`、`nav`,`footer`，`article`等要使搜索引擎收录我们的网页，其前提是要让搜索引擎的Spider能读懂我们的Web文件，搜索引擎Spider阅读网页的根据便是HTML规范，通过对HTML代码的分析，Spider才能判断网页内容，在此基础上才能判断针对相应关键词的相关性。另外，有效的HTML也可以保证Web页面可以在多种浏览器下被正确解释，避免同一个页面在不同的浏览器上显示不同的页面，同时，这对于提高网站的可用性方面也是有着极大好处的。
 
 ##练习&实践，如何写出一个规范的HTML文档
+
 目的：了解HTML的定义、概念、发展简史，掌握常用HTML标签的含义、用法，能够基于设计稿来合理规划HTML文档结构，理解语义化，合理地使用HTML标签来构建页面。
 
 按照下列图片，用语义化标签写出HTML结构，不用写CSS，可以使用HTML5的标签：

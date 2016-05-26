@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>导航栏</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        ul.nav{
+            width: 800px;
+            height: 50px;
+            margin:50px auto;
+            line-height: 50px;
+            list-style-type: none;
+            color: #fff;
+            font-size: 16px;
+            background: #3e99dc;
+        }
+
+        li.nav-item{
+            padding: 0 30px;
+            position: relative;
+            float: left;
+        }
+
+        li.nav-item:hover,li.nav-item:hover ul.sub-nav{
+            background: #7fc5f9;
+        }
+
+        ul.sub-nav{
+            width: 100%;
+            position: absolute;
+            background: #3e99dc;
+            left: 0;
+            top:50px;
+            display: none;
+        }
+
+        li.nav-item:hover ul.sub-nav{
+            display: block;
+        }
+
+        li.sub-nav-item{
+            padding: 0 30px;
+            font-size: 12px;
+        }
+
+        li.sub-nav-item:hover{
+            background: #3e99dc;
+        }
+
+    </style>
+</head>
+<body>
+    <ul class="nav">
+        <li class="nav-item">
+            <span>美洲旅游</span>
+            <ul class="sub-nav">
+                <li class="sub-nav-item">多日游</li>
+                <li class="sub-nav-item">一日游</li>
+                <li class="sub-nav-item">途风私家团</li>
+                <li class="sub-nav-item">票务</li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <span>欧洲旅游</span>
+            <ul class="sub-nav">
+                <li class="sub-nav-item">多日游</li>
+                <li class="sub-nav-item">一日游</li>
+                <li class="sub-nav-item">途风私家团</li>
+                <li class="sub-nav-item">票务</li>
+            </ul>
+        </li>
+        <li class="nav-item">游轮</li>
+        <li class="nav-item">用车</li>
+        <li class="nav-item">途风独创</li>
+    </ul>
+</body>
+</html>

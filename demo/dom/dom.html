@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM 常见操作</title>
+    <style>
+    *{
+        padding: 0;
+        margin: 0;
+        font-family: 'Microsoft Yahei';
+    }
+
+    pre{
+        padding:20px;
+        border: 1px solid #ccc;
+        background: #eee;
+        font-size: 12px;
+        border-radius: 5px;
+    }
+
+    fieldset{
+        border:1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    fieldset legend{
+        padding-left: 15px;
+        font-size: 16px;
+        /*border-bottom: 2px solid #eee;*/
+    }
+
+
+    .style-demo{
+        color:#fff;
+        background: red;
+        font-size: 20px;
+        width: 100px;
+        height: 50px;
+        font-weight: bold;
+    }
+    </style>
+</head>
+<body>
+    <h1>常见的DOM操作</h1>
+
+    <fieldset>
+        <legend>查找元素</legend>
+        
+        <div class="this is content!" id="J_id">
+            通过id查找元素。<button onclick="getElById('J_id')">getElementById</button>
+        </div>
+        <br><br>
+        <div class="J_class">
+            通过class名来查找元素<button onclick="getElsByClass('J_class')">getElementsByClassName</button>
+        </div>
+        <br><br>
+        <div>
+            通过标签名来查找元素<button onclick="getElsByTagName('div')">getElementsByTagName</button>
+        </div>        
+    </fieldset>
+    <br><br>
+    <fieldset>
+        <legend>删除元素</legend>
+        <div>
+            <button onclick="remove(this)">remove0</button>
+            <button onclick="remove(this)">remove1</button>
+            <button onclick="remove(this)">remove2</button>
+            <button onclick="remove(this)">remove3</button>
+            <button onclick="remove(this)">remove4</button>
+        </div>
+    </fieldset>
+    <br><br>
+    <fieldset>
+        <legend>其他操作</legend>
+        <div>
+            <button onclick="append(this.parentNode,'text node')">appendChild</button>
+        </div>
+        <br><br>
+        <div>
+            <button onclick="window.insertBefore(this,document.createTextNode('insert before node'))">insertBefore</button>
+            <button onclick="insertAfter(this,document.createTextNode('insert after node'))">insertAfter</button>
+        </div>
+        <br><br>
+        <div>
+            <span id="J_demo_span"><strong>innerHTML</strong> and <strong>innerText</strong></span><button onclick="getElById('J_html_content').innerHTML = getHTML(getElById('J_demo_span'))">innerHTML</button>  <button onclick="getElById('J_text_content').innerHTML = getText(getElById('J_demo_span'))">innerText</button>
+            <pre id="J_html_content"></pre>
+            <pre id="J_text_content"></pre>
+        </div>
+        <br><br>
+        <div>
+            <span id="J_attr_demo">attribute demo</span>
+            <button onclick="attr(getElById('J_attr_demo'),'abcd')">getAttribute</button> <button onclick="attr(getElById('J_attr_demo'),'abcd',1234)">setAttribute</button> 
+        </div>
+        <br><br>
+        <div>
+            <button style="background:blue;" class="style-demo" onclick="getStyle(this).color = 'red'">change color</button>
+        </div>
+    </fieldset>
+    <script src="./js.js"></script>
+</body>
+</html>

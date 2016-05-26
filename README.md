@@ -1,4 +1,4 @@
-## 前端实习生培训提纲
+## 前端培训提纲
 
 
 **HTTP(HyperText Transfer Protocol)**

@@ -1,4 +1,4 @@
-#JavaScript
+# JavaScript
 >JavaScript一种直译式脚本语言，是一种动态类型、弱类型、基于原型的语言，内置支持类型。它的解释器被称为JavaScript引擎，为浏览器的一部分，广泛用于客户端的脚本语言，最早是在HTML（标准通用标记语言下的一个应用）网页上使用，用来给HTML网页增加动态功能。
 
 
@@ -7,7 +7,7 @@ js的基本数据类型有五种：null、undefined、number、string、boolean
 
 引用数据类型：数组、对象
 
-##函数
+## 函数
 > 函数是由事件驱动的或者当它被调用时执行的可重复使用的代码块。
 
 **函数声明**
@@ -18,7 +18,7 @@ JavaScript 变量的生命期从它们被声明的时间开始。
 局部变量会在函数运行以后被删除。
 全局变量会在页面关闭后被删除。
 
-##常见API
+## 常见API
 **字符换：**substring、substr、split、replace、match
 **数组：**push、put、shift、unshift、slice、splice、join、sort
 
